@@ -55,19 +55,19 @@ function ding_frontend_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'search_result';
   $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sorteringskriterie: Indhold: Opdateringsdato */
+  /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
   $handler->display->display_options['sorts']['changed']['field'] = 'changed';
   $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
-  /* Kontekstuelt filter: Søg: Søgeord */
+  /* Contextual filter: Search: Search Terms */
   $handler->display->display_options['arguments']['keys']['id'] = 'keys';
   $handler->display->display_options['arguments']['keys']['table'] = 'search_index';
   $handler->display->display_options['arguments']['keys']['field'] = 'keys';
@@ -77,14 +77,14 @@ function ding_frontend_views_default_views() {
   $handler->display->display_options['arguments']['keys']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['keys']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['keys']['summary_options']['items_per_page'] = '25';
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -117,6 +117,7 @@ function ding_frontend_views_default_views() {
     t('sidste »'),
     t('Alle'),
     t('Content pane'),
+    t('more'),
     t('View panes'),
   );
   $export['ding_node_search'] = $view;
