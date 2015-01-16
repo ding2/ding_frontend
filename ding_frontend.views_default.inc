@@ -35,7 +35,7 @@ function ding_frontend_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
   $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
   $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
-  $handler->display->display_options['exposed_form']['options']['text_input_required'] = 'Der blev ikke fundet nogle resultater';
+  $handler->display->display_options['exposed_form']['options']['text_input_required'] = 'No results found';
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'ding_wysiwyg';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -107,7 +107,7 @@ function ding_frontend_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
-    t('Der blev ikke fundet nogle resultater'),
+    t('No results found'),
     t('Antal elementer'),
     t('- Alle -'),
     t('Forskydning'),
